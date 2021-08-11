@@ -1,0 +1,31 @@
+{% extends 'layouts/base.html' %}
+
+
+{% block title %}Профиль{% endblock title %}
+
+{% block content %}
+    <section class="py-5 text-center container main-box">
+        <div class="row">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Профиль</h1>
+              <hr>
+              <h3>Пользователь {{ user.username }}</h3>
+            <p class="lead text-muted">Данные пользователя профиля ...</p>
+            <!--
+            <p>
+              <a href="#" class="btn btn-primary my-2">Main call to action</a>
+              <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+            </p>
+            -->
+          </div>
+        </div>
+      </section>
+    <style>
+        .main-box {
+            padding-top: 0px;
+        }
+        .main-box .row {
+            padding-top: 0px;
+        }
+    </style>
+{% endblock content %}

@@ -1,0 +1,17 @@
+.nav-panel {
+    back-ground: #555555;
+    padding: 0px;
+}
+.nav-panel a {
+    color: lightgreen;
+    font: gothic 13pt 'Trebuchet MS';
+    back-ground color: #555555;
+    display: block;
+    padding: 15px;
+    margin: 0px 5px;
+    transition: color 1s, background 1s;
+}
+.nav-panel a: hover {
+    color: red;
+    background-color: whitesmoke;
+}

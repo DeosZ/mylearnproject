@@ -1,0 +1,30 @@
+{% extends 'layouts/base.html' %}
+
+
+{% block title %}Главная{% endblock title %}
+
+{% block content %}
+    <div class="p-5 mb-4 bg-light rounded-3 jumbo">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold header-1">Новостной портал</h1>
+        <p class="col-md-8 fs-4 sub-header">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+      </div>
+    </div>
+    <style>
+        .header-1 {
+            font-family: 'Georgia';
+            color: red;
+            text-shadow: 2px 2px darkviolet;
+            font-size: 36pt;
+        }
+        .sub-header {
+            color: lightcyan;
+            margin: 20px 0px;
+         }
+        .jumbo {
+            background-image: url('../../static/img/фон.jpg');
+            background-size: cover;
+        }
+    </style>
+{% endblock content %}

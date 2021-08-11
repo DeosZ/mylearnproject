@@ -1,0 +1,57 @@
+{% extends 'layouts/base.html' %}
+
+
+{% block title %}авторизация{% endblock title %}
+
+{% block content %}
+    <main class="form-signin">
+        <form action="/account/sign_in" method="post">
+            {% csrf_token %}
+            <h1 class="h3 mb-3 fw-normal">Авторизация</h1>
+            <div class="form-group input-panel">
+                  <input type="text" class="form-control" name="login" id="login" placeholder="Login">
+            </div>
+            <div class="form-group input-panel">
+                  <input type="password" class="form-control" name="pass1" id="pass1" placeholder="Password">
+            </div>
+
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Запомнить меня
+              </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+        </form>
+    </main>
+    <style>
+         .input-panel {
+            margin-bottom: 5px;
+         }
+         .form-signin h1 {
+            text-align: center;
+            padding-top: 50px;
+         }
+         .form-signin {
+            width: 100%;
+            max-width: 330px;
+            padding: 15px;
+            margin: auto;
+        }
+        .form-signin .checkbox {
+            font-weight: 400;
+        }
+        .form-signin .form-floating:focus-within {
+            z-index: 2;
+        }
+        .form-signin input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+    </style>
+{% endblock content %}
